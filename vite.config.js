@@ -1,8 +1,9 @@
 import { defineConfig } from 'vite';
 import solid from 'vite-plugin-solid';
 import { resolve } from 'path';
-const __dirname = import.meta.dirname; // بديل __dirname
+const __dirname = import.meta.dirname;
 export default defineConfig({
+    base: '/modpro-auth/', // ← اسم المستودع الخاص بك
     plugins: [solid()],
     resolve: {
         alias: {
